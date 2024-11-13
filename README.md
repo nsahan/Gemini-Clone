@@ -1,8 +1,15 @@
-# React + Vite
+# Gemini Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Gemini clone built with **React.js** and integrated with the **Gemini API** to provide real-time responses and a smooth user experience. This project includes a modern, dark-themed UI and features like user prompts, search suggestions, and dynamic response loading.
 
-Currently, two official plugins are available:
+## Features
+- Real-time API responses
+- Interactive, responsive UI
+- Dark theme design with a clean layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- React.js
+- Gemini API
+- Custom CSS
+
+This project showcases skills in React, API integration, and UI/UX design.

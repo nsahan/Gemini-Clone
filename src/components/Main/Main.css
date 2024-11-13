@@ -1,0 +1,223 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  /* Main Container */
+  .main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  .main .nav {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    padding: 20px;
+    color: #e0e0e0; /* Light text for navigation */
+    position: relative;
+  }
+  
+  .main .nav img {
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .main .greet {
+    margin: 50px 0;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+  }
+  
+  .main .greet span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #2c2c2c; /* Dark card background */
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 18px;
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+  }
+  
+  .main-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #333; /* Dark search bar */
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  
+  /* Icon styles inside the search bar */
+.search img {
+    width: 24px;
+    cursor: pointer;
+    filter: brightness(0) invert(1); /* Makes the icons white */
+}
+
+  
+  .search input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    color: #e0e0e0; /* Light text in input */
+  }
+  
+  .search div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .main .info {
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    color: #888; /* Lighter text for info */
+  }
+  
+  .result {
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    background-color: #2c2c2c; /* Dark result background */
+    border-radius: 8px;
+  }
+  
+  .result::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .r-title {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .result img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .data {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  .loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #555; /* Dark loader background */
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+  }
+  
+  @keyframes loader {
+    0% {
+      background-position: -800px 0px;
+    }
+    100% {
+      background-position: 800px 0px;
+    }
+  }
+  
+  .data p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #e0e0e0; /* Light text for data */
+  }
+  
+  @media (max-width: 600px) {
+    .main-bottom input {
+      flex: none;
+      width: 150px;
+    }
+  
+    .main-bottom img {
+      width: 20px;
+    }
+  
+    .search {
+      padding: 5px 10px;
+    }
+  
+    .search div {
+      gap: 5px;
+    }
+  }
+  
